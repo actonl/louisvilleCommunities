@@ -1,6 +1,7 @@
 /* ================================= 
   Base Layout Styles
 ==================================== */
+
 /* nav-links match body id's */
 *[id]:before { 
   display: block; 
@@ -8,24 +9,6 @@
   margin-top: -76px; 
   height: 76px; 
   visibility: hidden; 
-}
-
-ul {
-  list-style: none;
-}
-
-.wrapper a {
-  color: black;
-  text-decoration: underline;
-}
-
-
-.wrapper h1 {
-  margin-bottom: 40px;
-}
-.wrapper h1,
-.textTransformation {
-  text-transform: uppercase;
 }
 
 span {
@@ -37,6 +20,9 @@ span {
   color: white;
 }
 
+ul {
+  list-style: none;
+}
 
 /* ---- Navigation ---- */
 
@@ -54,7 +40,6 @@ background: none;
   background:#E31B1E;
 }
 
-
 /* ---- Layout Containers ---- */
 
 .wrapper {
@@ -66,10 +51,6 @@ background: none;
 
 .neighborhoodWrapper{
   margin: 40px 0px;
-}
-
-.textCenter {
-  text-align: center;
 }
 
 .card,
@@ -89,6 +70,34 @@ background: none;
   background: rgba(0,0,0,.5);
 }
 
+.imgCard {
+  margin: 0.5em;
+  overflow: hidden;   
+}
+
+.thingsToDoWrapper,
+.mediaWrapper {
+  margin-bottom: 45px;
+}
+
+/* ---- text-related treatments ---- */
+
+.wrapper h1,
+.textTransformation {
+  text-transform: uppercase;
+}
+
+.textCenter {
+  text-align: center;
+}
+
+.wrapper h1 {
+  margin-bottom: 40px;
+}
+
+.ttdCard h5 {
+  margin-bottom: 4px;
+}
 
 .cardBody p {
   display: none;
@@ -100,13 +109,23 @@ background: none;
 .card:hover p{
   display: block;
   box-shadow: 0 20px 5px -5px black;
-  /* box-shadow: 16px 16px 5px 0 rgba(0,0,0,0.2),16px 16px 5px 0 rgba(0,0,0,0.19); */
 }
 
-.imgCard {
-  margin: 0.5em;
-  overflow: hidden;   
+/* ---- images and links ---- */
+
+.neighborhoodWrapper a {
+  color: white;
+  text-decoration: none;
 }
+
+.thingsToDoWrapper a,
+.mediaWrapper a,
+.ContactWrap a,
+.footerWrap a {
+  color: black;
+  text-decoration: underline;
+}
+
 .imgCard img {
   transition: transform .6s ease; 
 }
@@ -118,6 +137,19 @@ background: none;
   display: none;
   overflow: hidden;
 }
+
+.imgCard img,
+.ttdCard img,
+.mediaCard img { 
+  max-width: 100%; 
+  height: auto;
+}
+
+.mediaCard img {
+  border-radius: 8px;
+}
+
+/* ---- general styles ---- */
 
 .collapsible,
 .readMore {
@@ -140,27 +172,6 @@ background: none;
   border: 1px solid transparent;
   color:white;
   background: rgba(227,27,30,1);
-}
-
-.imgCard img,
-.ttdCard img,
-.mediaCard img { 
-  max-width: 100%; 
-  height: auto;
-}
-
-.thingsToDoWrapper,
-.mediaWrapper,
-.contactUsWrapper {
-  margin-bottom: 45px;
-}
-
-.ttdCard h5 {
-  margin-bottom: 4px;
-}
-
-.mediaCard img {
-  border-radius: 8px;
 }
 
 .form-control:focus {
