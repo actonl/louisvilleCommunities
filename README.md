@@ -2,7 +2,7 @@
 
 Description
 
-This is a combination of the Kentucky and Louisville Tourism websites with a focus on the neighborhoods West of Ninth Street.
+This is a combination of the Kentucky and Louisville Tourism websites with a focus on the neighborhoods west of Ninth Street.
 
 Custom CSS Classes
 
