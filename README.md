@@ -1,5 +1,4 @@
 # louisvilleCommunities
-Code Louisville Project
 
 Description
 
